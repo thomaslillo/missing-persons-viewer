@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/missing-persons-viewer/static/css/main.073c9b0a.css",
-    "main.js": "/missing-persons-viewer/static/js/main.8fad08f6.js",
+    "main.js": "/missing-persons-viewer/static/js/main.76375258.js",
     "index.html": "/missing-persons-viewer/index.html",
     "main.073c9b0a.css.map": "/missing-persons-viewer/static/css/main.073c9b0a.css.map",
-    "main.8fad08f6.js.map": "/missing-persons-viewer/static/js/main.8fad08f6.js.map"
+    "main.76375258.js.map": "/missing-persons-viewer/static/js/main.76375258.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.8fad08f6.js"
+    "static/js/main.76375258.js"
   ]
 }
