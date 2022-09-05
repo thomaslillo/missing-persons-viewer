@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid'; // Grid version 
 import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
 // components
+import Title from './components/Title';
 //import Menu from './components/Menu';
 import './styles/App.css';
 
@@ -21,6 +22,7 @@ function App() {
       </Helmet>
       
       <div className="main-grid">
+        <Title/>
         <Grid container spacing={2}>
             <Grid xs={8}>
                 <h1>xs=8</h1>
