@@ -1,14 +1,28 @@
+import * as React from 'react';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+
 function Menu(props) {
 
     return (
         <div className="menu">
-            <div className="menu-item">
-                <div className="menu-item-name">
-                    <h3>{props.name}</h3>
-                </div>
-            </div>
+            <List>
+                {['All mail', 'Trash', 'Spam'].map((text, index) => (
+                <ListItem key={text} disablePadding>
+                    <ListItemButton>
+                    <ListItemIcon>
+                        {index % 2 === 0 ? 'X:' : 'Y:'}
+                    </ListItemIcon>
+                    <ListItemText primary={text} />
+                    </ListItemButton>
+                </ListItem>
+                ))}
+            </List>
         </div>
-    )
+    );
 
 }
 

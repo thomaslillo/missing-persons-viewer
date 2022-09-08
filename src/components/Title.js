@@ -1,15 +1,19 @@
 import * as React from 'react';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+import {AppBar, Box, Toolbar, Typography} from '@mui/material';
 
 function Title(){
-    return (        
-        <Toolbar>
-            <Typography variant="h6" color="inherit" noWrap>
-            NAME OF THE GRID
-            </Typography>
-        </Toolbar>
-    );
+    return (
+        <Box sx={{ flexGrow: 1 }}>
+          <AppBar position="static">
+            <Toolbar>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                RCMP Missing Persons Database Search Tool
+              </Typography>
+            </Toolbar>
+          </AppBar>
+        </Box>
+      );
 }
 
 export default Title;
+
