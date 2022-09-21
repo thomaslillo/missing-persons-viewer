@@ -23,10 +23,8 @@ function App() {
       </Helmet>    
 
       <div className="main-grid">        
+        <Title/>
         <Grid container spacing={2}>
-            <Grid xs={12}>
-              <Title/>
-            </Grid>
             <Grid xs={2}>
                 <h1>xs=2</h1>
                 <Menu/>
