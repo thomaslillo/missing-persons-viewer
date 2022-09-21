@@ -3,13 +3,13 @@ import { useState } from 'react'
 // helmet gives access to head tags
 import { Helmet } from 'react-helmet';
 // material UI
-import { styled } from '@mui/material/styles';
-import Grid from '@mui/material/Grid'; // Grid version 
-import Paper from '@mui/material/Paper';
+import { Grid, Stack, Paper, styled } from '@mui/material';
 // components
 import Title from './components/Title';
 import Menu from './components/Menu';
-import './styles/App.css';
+import PersonList from './components/PersonList';
+import { missing_persons } from './data/missing_persons';
+import { unidentified_remains } from './data/unidentified_remains';
 
 function App() {
   return (
@@ -22,21 +22,22 @@ function App() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
       </Helmet>    
 
-      <div className="main-grid">        
-        <Title/>
+      <Stack spacing={3} className="main-grid">
+        <Title />
         <Grid container spacing={2}>
-            <Grid xs={2}>
-                <h1>xs=2</h1>
-                <Menu/>
-            </Grid>
-            <Grid xs={5} sx={{ bgcolor: 'secondary.main' }}>
-                <h1>xs=6</h1>
-            </Grid>
-            <Grid xs={5}>
-                <h1>xs=6</h1>
-            </Grid>
+          <Grid xs={2}>
+            <h1>xs=2</h1>
+            <Menu />
+          </Grid>
+          <Grid xs={5} sx={{ bgcolor: "secondary.main" }}>
+            <PersonList json={missing_persons} />
+          </Grid>
+          <Grid xs={5}>
+            <PersonList json={unidentified_remains} />
+          </Grid>
         </Grid>
-      </div>
+      </Stack>
+
 
     </div>
   );

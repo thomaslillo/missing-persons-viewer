@@ -1,5 +1,7 @@
 # Deployment Guide
 
+npm run deploy
+
 https://github.com/gitname/react-gh-pages
 
 # Getting Started with Create React App
