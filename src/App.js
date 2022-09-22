@@ -3,15 +3,16 @@ import { useState } from 'react'
 // helmet gives access to head tags
 import { Helmet } from 'react-helmet';
 // material UI
-import { Grid, Stack, Paper, styled } from '@mui/material';
+import { Grid, Stack, Typography } from '@mui/material';
 // components
 import Title from './components/Title';
 import Menu from './components/Menu';
-import PersonList from './components/PersonList';
-import { missing_persons } from './data/missing_persons';
-import { unidentified_remains } from './data/unidentified_remains';
+import { PersonList } from './components/PersonList';
+// data
+import missing_persons from './data/missing_persons.json';
+import unidentified_remains from './data/unidentified_persons.json';
 
-function App() {
+function App() {  
   return (
     <div className="App">
 
@@ -25,19 +26,23 @@ function App() {
       <Stack spacing={3} className="main-grid">
         <Title />
         <Grid container spacing={2}>
-          <Grid xs={2}>
-            <h1>xs=2</h1>
+          <Grid xs={2} sx={{color: 'info.main'}}>
             <Menu />
           </Grid>
-          <Grid xs={5} sx={{ bgcolor: "secondary.main" }}>
+          <Grid xs={5}>
+            <Typography variant='h4' align="center">
+            Missing Persons
+            </Typography>
             <PersonList json={missing_persons} />
           </Grid>
           <Grid xs={5}>
+            <Typography variant='h4' align="center">
+            Unidentified Remains
+            </Typography>
             <PersonList json={unidentified_remains} />
           </Grid>
         </Grid>
       </Stack>
-
 
     </div>
   );
