@@ -13,6 +13,7 @@ import missing_persons from './data/missing_persons.json';
 import unidentified_remains from './data/unidentified_persons.json';
 
 function App() {  
+  
   return (
     <div className="App">
 
