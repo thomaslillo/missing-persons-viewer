@@ -25,6 +25,7 @@ function App() {
   }
   */
 
+  const collectionDate = '2021-09-01';
 
   return (
     <div className="App">
@@ -43,7 +44,7 @@ function App() {
         <Grid container spacing={2}>
           
           <Grid xs={2}>
-            <Menu />
+            <Menu collectionDate= {collectionDate} />
           </Grid>
           
 
@@ -51,7 +52,7 @@ function App() {
           <Grid xs={5}>
             
             <Typography variant='h4' align="center" color="info.dark">
-            Missing Persons
+            Missing Persons Records
             </Typography>
 
             <Box sx={{ maxHeight: 600, overflow: "scroll", bgcolor: "lightgrey" }}>
@@ -89,8 +90,8 @@ function App() {
 
           { /*Unidentified section*/ }
           <Grid xs={5}>
-            <Typography variant='h4' align="center">
-            Unidentified Remains
+            <Typography variant='h4' align="center" color="info.dark">
+            Unidentified Remains Records
             </Typography>
 
             {/*<PersonList json={unidentifiedList} />*/}

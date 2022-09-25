@@ -7,19 +7,18 @@ function Menu(props) {
         <Box sx={{color: 'info.dark', m:1}} >            
             <Typography variant='h4' align="center">
                 Menu
-            </Typography>
+            </Typography>            
             
             <Divider sx={{p:1}} />
 
             <Typography variant='h6' align="left" color="black" sx={{p:1}}>
-                Help us try to find missing persons by matching them to 
+                Try to find missing persons by matching them to 
                 the unidentified remains.             
             </Typography>
 
             <Typography variant='h6' align="left" color="black" sx={{p:1}}>
-                You can filter the list of 
-                unidentified remains by clicking on the red button 
-                within each Missing Persons entry. 
+                Filter the list of unidentified remains by clicking 
+                on the red buttons.
             </Typography>
 
             <Divider sx={{p:1}} />
@@ -41,6 +40,14 @@ function Menu(props) {
             <Typography variant='body' align="left" color="black">
                 This project is not affiliated with the RCMP.
             </Typography>
+
+            <Divider sx={{p:1}} />
+
+            <Typography align="center" color="info.dark">
+                Data Last Updated:
+                <br /> {props.collectionDate}
+            </Typography>                        
+
         </Box>
     );
 
