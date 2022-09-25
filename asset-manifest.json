@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/missing-persons-viewer/static/js/main.527a3658.js",
+    "main.js": "/missing-persons-viewer/static/js/main.d4b0c75a.js",
     "index.html": "/missing-persons-viewer/index.html",
-    "main.527a3658.js.map": "/missing-persons-viewer/static/js/main.527a3658.js.map"
+    "main.d4b0c75a.js.map": "/missing-persons-viewer/static/js/main.d4b0c75a.js.map"
   },
   "entrypoints": [
-    "static/js/main.527a3658.js"
+    "static/js/main.d4b0c75a.js"
   ]
 }
