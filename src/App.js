@@ -50,7 +50,7 @@ function App() {
           { /*missing persons section*/ }                    
           <Grid xs={5}>
             
-            <Typography variant='h4' align="center">
+            <Typography variant='h4' align="center" color="info.dark">
             Missing Persons
             </Typography>
 
