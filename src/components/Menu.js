@@ -3,24 +3,17 @@ import { List, Box, ListItem, ListItemButton, ListItemIcon, ListItemText, Typogr
 
 function Menu(props) {
 
-    return (
-    <Box>            
-        <Typography variant='h4' align="center">
-            Menu
-        </Typography>
-        <List>
-            {['Search 1', 'Search 2', 'Search 3', 'Search 4', 'Search 5'].map((text, index) => (
-                <ListItem key={text} disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? 'X:' : 'Y:'}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItemButton>
-                </ListItem>
-            ))}
-        </List>
-    </Box>
+    return (    
+        <Box sx={{color: 'info.main', m:1}} >            
+            <Typography variant='h4' align="center" sx={{p:1}}>
+                Menu
+            </Typography>
+            
+            <Typography variant='h6' align="left" color="black" sx={{p:1}}>
+                These are the details of the project. 
+            </Typography>
+        
+        </Box>
     );
 
 }

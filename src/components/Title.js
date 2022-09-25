@@ -6,8 +6,8 @@ function Title(){
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static">
             <Toolbar>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                RCMP Missing Persons Database Search Tool
+              <Typography variant="h6" sx={{ flexGrow: 1 }}>
+                RCMP Missing Persons Database - Entry Matching Tool
               </Typography>
             </Toolbar>
           </AppBar>
